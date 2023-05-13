@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Welcome to my restaurant!</h1>
+    <script src="./qrcode.js"></script>
+    <div id="qrcode"></div>
+    <br>
+    <div id="qrcode2"></div>
+    <br>
+    <div id="qrcode3"></div>
+    <br>
+    <div id="qrcode4"></div>
+    <script type="text/javascript">
+        new QRCode(document.getElementById("qrcode"), "https://www.apizzadamooca.com.br/menus");
+    </script>
+    <script type="text/javascript">
+        new QRCode(document.getElementById("qrcode2"), "https://cardapio.luccacafesespeciais.com/cardapio-digital.pdf");
+    </script>
+    <script type="text/javascript">
+        new QRCode(document.getElementById("qrcode3"), "https://www.hungryhowies.com/");
+    </script>
+    <script type="text/javascript">
+        new QRCode(document.getElementById("qrcode4"), "https://winehouse.kitchen/food/");
+    </script>
+    <br>
+    <div id="qrcode5"></div>
+    <script type="text/javascript">
+        new QRCode(document.getElementById("qrcode5"), "https://github.com/wmorae/ElBuenSabor/blob/main/Cardapio.pdf?raw=true");
+    </script>
+
+    /*With some options*/
+
+    <div id="qrcode-2"></div>
+    <script type="text/javascript">
+        var qrcode = new QRCode(document.getElementById("qrcode-2"), {
+            text: "https://webisora.com",
+            width: 128,
+            height: 128,
+            colorDark: "#5868bf",
+            colorLight: "#ffffff",
+            correctLevel: QRCode.CorrectLevel.H
+        });
+    </script>
+</body>
+
+</html>
